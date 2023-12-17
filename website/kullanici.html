@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Ticaret</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="kullanici.css" />
+  </head>
+  <body>
+    <!-- header başlangıç -->
+
+    <header>
+      <div class="global-notification">
+        <p>
+          BLACK FRİDAY - SEÇİLİ ÜRÜNLERDE %30 İNDİRİM
+          <a href="shop.html"> SATIN AL</a>
+        </p>
+      </div>
+      <div class="header-row">
+        <div class="container">
+          <div class="header-wrapper">
+            <div class="header-left">
+              <a href="#" class="logo">LOGO</a>
+            </div>
+            <div class="header-center">
+              <div class="wrap">
+                <div class="search">
+                  <input
+                    type="text"
+                    class="searchTerm"
+                    placeholder="Ürün, Kategori, Marka Ara"
+                  />
+                  <button type="submit" class="searchButton">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="header-right">
+              <div class="header-right-links">
+                <div class="header-cart">
+                  <a href="sepet.html" class="header-cart-link">
+                    <i class="bi bi-cart2"></i>
+                    <span class="header-cart-count">0</span>
+                  </a>
+                </div>
+                <a href="" class="header-account">
+                  <div class="btn-group">
+                  <button class="button" style="vertical-align: middle">
+                    <span>Hesabım </span>
+                  </button>
+                  
+                </div>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+   
+    <div class="gradient-cards">
+        <div class="card">
+          <div class="container-card bg-green-box">  
+            </svg>
+            <p class="card-title">Kişisel Bilgiler</p>
+            <a href="kullanici.html"><i class="bi bi-person-fill"></i><span class="bord"> Kullanıcı Bilgilerim</span> </a><hr> 
+            <a href="adres.html"><i class="bi bi-geo-alt-fill"></i><span class="bord"> Adres Bilgilerim</span></a><hr>
+            <a href="kart.html"><i class="bi bi-credit-card"></i><span class="bord"> Kayıtlı Kartlarım</span></a><hr>
+            <a href="siparisler.html"><i class="bi bi-box-seam-fill"></i><span class="bord"> Siparişlerim</span></a><hr>
+            <a href=""><i class="bi bi-envelope-heart-fill"></i><span class="bord"> Değerlendirmeler</span></a><hr>
+            <a href=""><i class="bi bi-patch-question-fill"></i><span class="bord"> Yardım</span></a>
+          </div>
+
+           
+
+          <form action="" class="demo-form1">
+            <p class="card-title">Üye İşlemlerim</p>
+            <div class="input-wrap">
+                <label class="f-title" for="name">Adınız/Soyadınız</label>
+                <input type="text" id="name" name="name" class="input" placeholder="Adınız/soyadınız"
+                    required>
+            </div>
+            <div class="input-wrap">
+                <label class="f-title" for="phone">Telefon Numaranız</label>
+                <input type="number" id="phone" name="phone" class="input" placeholder="(5xx)(123 45 67)"
+                    required>
+                    
+            </div>
+            <div class="input-wrap">
+                <label class="f-title" for="email">E-Posta Adresiniz</label>
+                <input type="email" id="email" name="email" class="input" placeholder="E-Posta Adresiniz"
+                    required>
+            </div>
+        
+           
+        
+            <div class="input-wrap">
+                <label class="f-title" for="birthday">Doğum Tarihiniz</label>
+                <input type="date" id="birthday" name="birthday" class="input" placeholder="İl/ilçe"
+                    required>
+            </div>
+            
+            <div class="input-wrap">
+                <label class="f-title" for="gender">Cinsiyetiniz</label>
+                <select class="input" id="gender" name="gender">
+                    <option selected disabled>Cinsiyetiniz</option>
+                    <option value="Erkek">Erkek</option>
+                    <option value="Bayan">Kadın</option>
+                </select>
+            </div>
+            <button class="btn btn-danger"> Güncelle</button>
+           
+        </form>
+
+        <form action="" class="demo-form2">
+            <p class="card-title">Şifre İşlemlerim</p>
+            <div class="input-wrap">
+                <label class="f-title" for="name">Şu Anki Şifre</label>
+                <input type="password" id="password" name="password" class="input" 
+                    required>
+                    
+                
+            </div>
+            <div class="input-wrap">
+                <label class="f-title" for="name">yeni şifre</label>
+                <input type="password" id="password" name="password" class="input" 
+                    required>
+                   
+            </div>
+            <div class="input-wrap">
+                <label class="f-title" for="name">yeni şifre</label>
+                <input type="password" id="password" name="password" class="input" 
+                    required>
+            </div>
+    
+           
+        <button class="btn btn-danger">Güncelle</button>
+           
+        </form>
+                        
+  
+  
+  

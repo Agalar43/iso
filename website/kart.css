@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* header başla */
+  header {
+    border-bottom: 1px solid #dee0ea;
+  }
+  
+  .global-notification {
+    background-color: blueviolet;
+    padding: 14px 0;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+  }
+  
+  .global-notification a {
+    color: gold;
+    font-weight: 600;
+  }
+  
+  .header-row {
+    height: 90px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-left .logo {
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+  }
+  
+  .header-center {
+    position: relative;
+  }
+  
+  .search {
+    width: 500px;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #ff8c00;
+    border-right: none;
+    padding: 16px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9dbfaf;
+  }
+  
+  .searchTerm:focus {
+    color: #ff8c00;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 37px;
+    border: 1px solid #ff8c00;
+    background: #ff8c00;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .header-right .header-right-links {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+  
+  .header-right i {
+    font-size: 18px;
+    display: flex;
+  }
+  
+  .header-right .header-cart {
+    position: relative;
+  }
+  
+  .header-right .header-cart-link .header-cart-count {
+    width: 16px;
+    height: 16px;
+    background-color: #1367ef;
+    color: white;
+    font-size: 10px;
+    border-radius: 100%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 500;
+  }
+  
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #204e5f;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  /* header son */
+  
+  .footer-section {
+    background: #151414;
+    position: relative;
+  }
+  .footer-content {
+    position: relative;
+    z-index: 2;
+  }
+  .footer-pattern img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 330px;
+    background-size: cover;
+    background-position: 100% 100%;
+  }
+  .footer-logo {
+    margin-bottom: 30px;
+  }
+  .footer-logo img {
+    max-width: 200px;
+  }
+  .footer-text p {
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #7e7e7e;
+    line-height: 28px;
+  }
+  .footer-social-icon span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+  }
+  .footer-social-icon a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 15px;
+  }
+  .footer-social-icon i {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+  }
+  .facebook-bg {
+    background: #3b5998;
+  }
+  .twitter-bg {
+    background: #55acee;
+  }
+  .google-bg {
+    background: #dd4b39;
+  }
+  .footer-widget-heading h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 50px;
+    background: #ff5e14;
+  }
+  .footer-widget ul li {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 12px;
+  }
+  .footer-widget ul li a:hover {
+    color: #ff5e14;
+  }
+  .footer-widget ul li a {
+    color: #878787;
+    text-transform: capitalize;
+  }
+  .subscribe-form {
+    position: relative;
+    overflow: hidden;
+  }
+  .subscribe-form input {
+    width: 100%;
+    padding: 14px 28px;
+    background: #2e2e2e;
+    border: 1px solid #2e2e2e;
+    color: #fff;
+  }
+  .subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+  }
+  .subscribe-form button i {
+    color: #fff;
+    font-size: 22px;
+    transform: rotate(-6deg);
+  }
+  .copyright-area {
+    background: #202020;
+    padding: 25px 0;
+  }
+  .copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #878787;
+  }
+  .copyright-text p a {
+    color: #ff5e14;
+  }
+  .footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .footer-menu li:hover a {
+    color: #ff5e14;
+  }
+  .footer-menu li a {
+    font-size: 14px;
+    color: #878787;
+  }
+  
+  .gradient-cards {
+    margin-right: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    padding: 30px;
+    @media screen and (max-width: 991px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .container-title {
+    text-align: center;
+    padding: 0 !important;
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 60px;
+  }
+  
+  .card {
+    max-width: 250px;
+    border: 0;
+    width: 100%;
+    margin-inline: auto;
+  }
+  
+  .container-card {
+    position: relative;
+    border: 2px solid transparent;
+    background: #ff8c00;
+    background-clip: padding-box;
+    border-radius: 45px;
+    padding: 40px;
+  }
+  .card-title {
+    font-weight: 600;
+    color: white;
+    letter-spacing: -0.02em;
+    line-height: 40px;
+    font-style: normal;
+    font-size: 28px;
+    padding-bottom: 8px;
+  }
+  
+  .card-description {
+    font-weight: 600;
+    line-height: 32px;
+    color: hsla(0, 0%, 100%, 0.5);
+    font-size: 16px;
+    max-width: 470px;
+  }
+  
+  
+  .bord {
+      color: #000;
+  }
+  
+
+  .mk-icon-sim,
+  .mk-icon-visa,
+  .mk-icon-world-map{
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+  }
+  
+  body{
+    
+    color:#444;
+    
+  }
+  *,:after,:before{box-sizing:border-box}
+  .pull-left{float:left}
+  .pull-right{float:right}
+  .clearfix:after,.clearfix:before{content:'';display:table}
+  .clearfix:after{clear:both;display:block}
+  
+
+  .credit-card-wrap{
+    position: relative;
+    top: -300px;
+    left: 550px;
+    width:450px;
+    height:285px;
+    border-radius:20px;
+    background:#5D4157;
+    margin-left:-225px;
+    margin-top:-142.5px;
+    background:-webkit-linear-gradient(to left, #5D4157 , #A8CABA);
+    background:linear-gradient(to left, #5D4157 , #A8CABA);
+    box-shadow:2px 2px rgba(0,0,0,.4);
+  }
+  .credit-card-wrap .mk-icon-world-map{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    position:absolute;
+    border-radius:inherit;
+  }
+  .credit-card-wrap .mk-icon-world-map:before{
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:0;
+    background:rgba(0,0,0,.4);
+    background:radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, rgba(0,0,0,.2) 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+      radial-gradient(at 100% 100%, rgba(96, 16, 48, 0) 9px, rgba(255,255,255,.2) 10px, rgba(96, 16, 48, 0) 11px), rgba(0,0,0,.6);
+    background-size: 20px 20px;
+  }
+  .credit-card-wrap .credit-card-inner{
+    z-index:100;
+    padding:30px;
+    width:inherit;
+    height:inherit;
+    position:relative;
+  }
+  .credit-card-wrap .credit-logo .text{
+    font-size:24px;
+    font-weight:500;
+    margin-left:10px;
+    text-transform:uppercase;
+    color:rgba(255,255,255,.8);
+  }
+  .credit-card-wrap .credit-logo .shape{
+    width:40px;
+    height:40px;
+    display:inline-block;
+    background-color:#dc143c;
+    box-shadow:-2px 2px 0 rgba(255,255,255,.8);
+    border-radius:40px 0 40px 40px;
+    transform:rotate(-45deg);
+  }
+  .credit-card-wrap .credit-logo .shape>.txt{
+    color:#ccc;
+    display:block;
+    width:inherit;
+    font-size:14px;
+    height:inherit;
+    font-weight:500;
+    line-height:40px;
+    text-align:center;
+    transform:rotate(45deg);
+  }
+  .credit-card-wrap .credit-font{
+    color:#fff;
+    font-size:18px;
+    font-family:ocr_a_std,sans-serif;
+    text-shadow:-1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+  }
+  .credit-card-wrap .credit-card-number{
+    font-size:26px;
+    text-align:center;
+    position:relative;
+    letter-spacing:2px;
+    margin-bottom:20px;
+    white-space:nowrap;
+  }
+  .credit-card-wrap .credit-card-number:before{
+    top:100%;
+    font-size:12px;
+    font-family:Roboto;
+    content:attr(data-text);
+  }
+  .credit-card-wrap .credit-card-date{
+    color:#fff;
+    text-align:center;
+  }
+  .credit-card-wrap .credit-card-date .title{
+    width:50px;
+    color:#deb887;
+    font-size:12px;
+    line-height:14px;
+    text-align:right;
+    display:inline-block;
+    text-transform:uppercase;
+  }
+  .credit-card-wrap .credit-card-date .credit-font{
+    top:-5px;
+    left:10px;
+    position:relative;
+  }
+  .credit-card-wrap .credit-author{
+    padding-top:10px;
+  }
+  .credit-card-wrap .mk-icon-sim{
+    width:55px;
+    height:40px;
+    margin:20px 0;
+    border-radius:8px;
+    background-color:#fdd76f;
+  }
+  .credit-card-wrap .mk-icon-visa{
+    width:90px;
+    height:45px;
+    bottom:-10px;
+    position:relative;
+  }
+  .credit-card-wrap .footer{
+    left:30px;
+    right:30px;
+    bottom:30px;
+    position:absolute;
+  }
+  .credit-card-wrap .footer .pull-left{
+    width:70%;
+  }
+
+  .cvc{
+    margin-left: 200px;
+    color: white;
+  }
