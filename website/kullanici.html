@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="kullanici.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- header başlangıç -->
@@ -56,100 +56,76 @@
                 </div>
                 <a href="" class="header-account">
                   <div class="btn-group">
-                  <button class="button" style="vertical-align: middle">
-                    <span>Hesabım </span>
-                  </button>
-                  
-                </div>
+                    <button class="button" style="vertical-align: middle">
+                      <span>Giriş Yap </span>
+                    </button>
+                    <button class="button" style="vertical-align: middle">
+                      <span>Kayıt Ol </span>
+                    </button>
+                  </div>
                 </a>
-                
               </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-   
-    <div class="gradient-cards">
-        <div class="card">
-          <div class="container-card bg-green-box">  
-            </svg>
-            <p class="card-title">Kişisel Bilgiler</p>
-            <a href="kullanici.html"><i class="bi bi-person-fill"></i><span class="bord"> Kullanıcı Bilgilerim</span> </a><hr> 
-            <a href="adres.html"><i class="bi bi-geo-alt-fill"></i><span class="bord"> Adres Bilgilerim</span></a><hr>
-            <a href="kart.html"><i class="bi bi-credit-card"></i><span class="bord"> Kayıtlı Kartlarım</span></a><hr>
-            <a href="siparisler.html"><i class="bi bi-box-seam-fill"></i><span class="bord"> Siparişlerim</span></a><hr>
-            <a href=""><i class="bi bi-envelope-heart-fill"></i><span class="bord"> Değerlendirmeler</span></a><hr>
-            <a href=""><i class="bi bi-patch-question-fill"></i><span class="bord"> Yardım</span></a>
-          </div>
 
-           
+    <div class="box1">
+      <div class="box5">
+        <h5 class="bi bi-person-circle"> PROFİLİM</h5>
+        <hr />
+        <button  class="button button4">KULLANICI BİLGİLERİM</button>
+        <hr />
+        <button class="button button4">ADRES BİLGİLERİM</button>
+        <hr />
+        <button class="button button4">SİPARİŞLERİM</button>
+        <hr />
+        <button class="button button4">MESAJLAR</button>
+        <hr />
+      </div>
+    </div>
 
-          <form action="" class="demo-form1">
-            <p class="card-title">Üye İşlemlerim</p>
-            <div class="input-wrap">
-                <label class="f-title" for="name">Adınız/Soyadınız</label>
-                <input type="text" id="name" name="name" class="input" placeholder="Adınız/soyadınız"
-                    required>
-            </div>
-            <div class="input-wrap">
-                <label class="f-title" for="phone">Telefon Numaranız</label>
-                <input type="number" id="phone" name="phone" class="input" placeholder="(5xx)(123 45 67)"
-                    required>
-                    
-            </div>
-            <div class="input-wrap">
-                <label class="f-title" for="email">E-Posta Adresiniz</label>
-                <input type="email" id="email" name="email" class="input" placeholder="E-Posta Adresiniz"
-                    required>
-            </div>
-        
-           
-        
-            <div class="input-wrap">
-                <label class="f-title" for="birthday">Doğum Tarihiniz</label>
-                <input type="date" id="birthday" name="birthday" class="input" placeholder="İl/ilçe"
-                    required>
-            </div>
-            
-            <div class="input-wrap">
-                <label class="f-title" for="gender">Cinsiyetiniz</label>
-                <select class="input" id="gender" name="gender">
-                    <option selected disabled>Cinsiyetiniz</option>
-                    <option value="Erkek">Erkek</option>
-                    <option value="Bayan">Kadın</option>
-                </select>
-            </div>
-            <button class="btn btn-danger"> Güncelle</button>
-           
-        </form>
-
-        <form action="" class="demo-form2">
-            <p class="card-title">Şifre İşlemlerim</p>
-            <div class="input-wrap">
-                <label class="f-title" for="name">Şu Anki Şifre</label>
-                <input type="password" id="password" name="password" class="input" 
-                    required>
-                    
-                
-            </div>
-            <div class="input-wrap">
-                <label class="f-title" for="name">yeni şifre</label>
-                <input type="password" id="password" name="password" class="input" 
-                    required>
-                   
-            </div>
-            <div class="input-wrap">
-                <label class="f-title" for="name">yeni şifre</label>
-                <input type="password" id="password" name="password" class="input" 
-                    required>
-            </div>
     
-           
-        <button class="btn btn-danger">Güncelle</button>
-           
-        </form>
-                        
-  
-  
-  
+
+    <div class="box2">
+      <div class="box3">
+        <div class="write">
+          <label for="uname"><b>Adınız</b></label
+          ><br />
+          <input type="text" name="uname" required /><br /><br />
+
+          <label for="uname"><b>Soyadınız</b></label
+          ><br />
+          <input type="text" name="uname" required /><br /><br />
+
+          <label for="uname"><b>E-Mail</b></label
+          ><br />
+          <input type="text" name="uname" required /><br /><br />
+
+          <label for="uname"><b>Telefon Numarası</b></label
+          ><br />
+          <input type="text" name="uname" required /><br /><br />
+
+          <button class="button button5">KAYDET</button>
+        </div>
+      </div>
+
+      <div class="box4">
+        <div class="write1">
+          <label for="psw"><b>Şifreniz</b></label>
+          <input type="password" name="psw" required /><br /><br />
+
+          <label for="psw-repeat"><b>Yeni Şifreniz</b></label>
+          <input type="password" name="psw-repeat" required /><br /><br />
+
+          <label for="psw-repeat"><b>Tekrar Yeni Şifreniz</b></label>
+          <input type="password" name="psw-repeat" required /> <br />
+          <br />
+
+          <button class="button button5">KAYDET</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
